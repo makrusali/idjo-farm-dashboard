@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <!-- Montserrat font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="grid-container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <p class="header-title">Teh Jawa</p>
+      </div>
+
+      <div class="header-right">
+        <span class="material-icons-outlined header-icon">
+          account_circle
+        </span>
+        <span class="material-icons-outlined header-icon">
+          notifications
+        </span>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-title">
+        <div class="sidebar-brand">
+          <span>Idjo Farm</span>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <ul class="sidebar-list">
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">
+            dashboard
+          </span> Dashboard
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">
+            grass
+          </span> Task
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">
+            electrical_services
+          </span> Devices
+        </li>
+        <li class="sidebar-list-item">
+          <span class="material-icons-outlined">
+            settings
+          </span> Settings
+        </li>
+      </ul>
+    </aside>
+    <!-- End sidebar -->
+
+    <!-- Main container -->
+    <main class="main-container">
+      <div class="main-title">
+        <h2>Dashboard</h2>
+      </div>
+
+      <!-- Actions -->
+      <div class="actions">
+        <div class="action-card">
+          <div class="action-card-left" style="width: 50%;">
+            <h3>Watering Plant 1</h3>
+            <form action="#" style="display: flex; flex-direction: column; row-gap: 12px;">
+              <label for="lang">Trigger On</label>
+              <div style="display: flex; column-gap: 16px;">
+                <select name="languages" id="lang"
+                  style="padding: 8px; border-radius: 2px; -webkit-appearance: none; font-family: 'Montserrat'; border: 2px solid rgb(216, 216, 216);">
+                  <option value="php" style="margin: 10px;">Clock</option>
+                  <option value="java" style="margin: 10px;">Sensor Value</option>
+                </select>
+                <input type="time" name="" id=""
+                  style="padding: 8px; border-radius: 2px; font-family: 'Montserrat'; border: 2px solid rgb(216, 216, 216);">
+              </div>
+              <div style="display: flex; column-gap: 8px;">
+                <button class="button button-delete">Delete</button>
+                <button class="button button-disable">Disable</button>
+                <button class="button button-update">Update</button>
+              </div>
+            </form>
+          </div>
+          <div class="action-card-right" style="width: 50%; display: flex; flex-direction: column; margin-top: 12px;">
+            <div class="action-badge action-badge-waiting">waiting</div>
+            <p>Notes</p>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+
+        <div class="action-card">
+          <div class="action-badge action-badge-succes">waiting</div>
+          <h3>Watering Plant 2</h3>
+        </div>
+
+        <div class="action-card">
+          <div class="action-badge action-badge-error">Error</div>
+          <h3>Watering Plant 3</h3>
+        </div>
+
+        <div class="action-card">
+          <div class="action-badge action-badge-running">Running</div>
+          <h3>Watering Plant 3</h3>
+        </div>
+      </div>
+
+      <!-- Datas -->
+      <div class="datas">
+
+        <div class="data-card">
+          <div class="data-card-left">
+            <span class="material-icons-outlined" style="padding: 8px;">
+              thermostat
+            </span>
+          </div>
+          <div class="data-card-right">
+            <p>46&deg;C</p>
+            <p>Temperature</p>
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="data-card-left">
+            <span class="material-icons-outlined" style="padding: 8px;">
+              cloud
+            </span>
+          </div>
+          <div class="data-card-right">
+            <p>46&percnt;</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="data-card">
+          <div class="data-card-left">
+            <span class="material-icons-outlined" style="padding: 8px;">
+              wb_sunny
+            </span>
+          </div>
+          <div class="data-card-right">
+            <p>4.5</p>
+            <p>sunlight intensity</p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Photos  -->
+      <div class="photos">
+        <div class="photo-card">
+          <h3>Photo On Place</h3>
+          <div class="photo-image">
+            <img style="background-size: cover; width: 100%; aspect-ratio: 4/3;"
+              src="https://media.istockphoto.com/id/808561294/id/foto/jagung.jpg?s=1024x1024&w=is&k=20&c=QLk70DDHBgeln8isDooSkR1u95JBHeNSnx-kqWb1VA4="
+              alt="">
+          </div>
+          <p>Updated 1 Minute ago</p>
+        </div>
+
+        <div class="photo-card">
+          <h3>Photo On Place</h3>
+          <div class="photo-image">
+            <img style="background-size: cover; width: 100%; aspect-ratio: 4/3;"
+              src="https://images.unsplash.com/photo-1529313780224-1a12b68bed16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="">
+          </div>
+          <p>Updated 1 Minute ago</p>
+        </div>
+      </div>
+
+      <div class="charts">
+        <div class="charts-card">
+          <p class="chart-title">Temperature On Place</p>
+          <div id="temperature-chart"></div>
+        </div>
+        <div class="charts-card">
+          <p class="chart-title">Humidity On Place</p>
+          <div id="humidity-chart"></div>
+        </div>
+      </div>
+    </main>
+    <!-- End main -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- ApexCharts -->
+</body>
+
+</html>
