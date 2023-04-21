@@ -83,51 +83,83 @@
         <h2>Dashboard</h2>
       </div>
 
-      <!-- Actions -->
-      <div class="actions">
-        <div class="action-card">
-          <div class="action-card-left" style="width: 50%;">
+      <!-- task -->
+      <div class="task">
+        <div class="task-card">
+          <div class="task-card-left">
             <h3>Watering Plant 1</h3>
-            <form action="#" style="display: flex; flex-direction: column; row-gap: 12px;">
-              <label for="lang">Trigger On</label>
-              <div style="display: flex; column-gap: 16px;">
-                <select name="languages" id="lang"
-                  style="padding: 8px; border-radius: 2px; -webkit-appearance: none; font-family: 'Montserrat'; border: 2px solid rgb(216, 216, 216);">
-                  <option value="php" style="margin: 10px;">Clock</option>
-                  <option value="java" style="margin: 10px;">Sensor Value</option>
-                </select>
-                <input type="time" name="" id=""
-                  style="padding: 8px; border-radius: 2px; font-family: 'Montserrat'; border: 2px solid rgb(216, 216, 216);">
-              </div>
-              <div style="display: flex; column-gap: 8px;">
+            <form action="#" class="task-card-form">
+              <label for="trigger-type">Trigger On</label>
+              <select name="trigger-type" id="trigger-type">
+                <option value="clock">Clock</option>
+                <option value="sensor_value">Sensor Value</option>
+              </select>
+              <input class="task-card-form-time-input" type="time" name="" id="">
+              <div class="task-form-button-container">
                 <button class="button button-delete">Delete</button>
                 <button class="button button-disable">Disable</button>
                 <button class="button button-update">Update</button>
               </div>
             </form>
           </div>
-          <div class="action-card-right" style="width: 50%; display: flex; flex-direction: column; margin-top: 12px;">
-            <div class="action-badge action-badge-waiting">waiting</div>
+          <div class="task-card-right">
+            <div class="task-badge task-badge-waiting">waiting</div>
             <p>Notes</p>
-            <p style="margin: 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="task-card">
+          <div class="task-card-left">
+            <h3>Watering Plant 1</h3>
+            <form action="#" class="task-card-form">
+              <label for="trigger-type">Trigger On</label>
+              <select name="trigger-type" id="trigger-type">
+                <option value="clock">Clock</option>
+                <option value="sensor_value">Sensor Value</option>
+              </select>
+              <input class="task-card-form-time-input" type="time" name="" id="">
+              <div class="task-form-button-container">
+                <button class="button button-delete">Delete</button>
+                <button class="button button-disable">Disable</button>
+                <button class="button button-update">Update</button>
+              </div>
+            </form>
+          </div>
+          <div class="task-card-right">
+            <div class="task-badge task-badge-running">Running</div>
+            <p>Notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
 
 
-        <div class="action-card">
-          <div class="action-badge action-badge-succes">waiting</div>
-          <h3>Watering Plant 2</h3>
+        <div class="task-card">
+          <div class="task-card-left">
+            <h3>Watering Plant 1</h3>
+            <form action="#" class="task-card-form">
+              <label for="trigger-type">Trigger On</label>
+              <select name="trigger-type" id="trigger-type">
+                <option value="clock">Clock</option>
+                <option value="sensor_value">Sensor Value</option>
+              </select>
+              <input class="task-card-form-time-input" type="time" name="" id="">
+              <div class="task-form-button-container">
+                <button class="button button-delete">Delete</button>
+                <button class="button button-disable">Disable</button>
+                <button class="button button-update">Update</button>
+              </div>
+            </form>
+          </div>
+          <div class="task-card-right">
+            <div class="task-badge task-badge-succes">success</div>
+            <p>Notes</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
 
-        <div class="action-card">
-          <div class="action-badge action-badge-error">Error</div>
-          <h3>Watering Plant 3</h3>
-        </div>
 
-        <div class="action-card">
-          <div class="action-badge action-badge-running">Running</div>
-          <h3>Watering Plant 3</h3>
-        </div>
+
       </div>
 
       <!-- Datas -->
