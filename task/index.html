@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-  <title>Dashboard</title>
+  <title>Task | Dashboard</title>
 
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
   <!-- Montserrat font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,8 +80,55 @@
     <!-- Main container -->
     <main class="main-container">
       <div class="main-title">
-        <h2>Dashboard</h2>
+        <h2>Task</h2>
       </div>
+
+      <div style="margin-bottom: 24px;">
+        <button class="button button-primary">
+          <span class="material-icons-outlined">
+            add
+          </span> Add Task
+        </button>
+      </div>
+
+      <div class="add-task-modal">
+        <div></div>
+        <form action="" method="post">
+          <div class="modal-form-item" style="display: flex; flex-direction: column; row-gap: 12px; ">
+            <label for="">Task Name</label>
+            <input type="text"
+              style="padding: 12px; border: 1px solid black; border-radius: 2px; font-family: 'Montserrat'; font-size: medium;">
+          </div>
+          <div class="modal-form-item" style="display: flex; flex-direction: column; row-gap: 12px;">
+            <label for="">Task Notes</label>
+            <textarea rows="5"
+              style="padding: 12px; border: 1px solid black; border-radius: 2px; font-family: 'Montserrat'; font-size: medium;"></textarea>
+          </div>
+
+          <div class="modal-form-item" style="display: flex; flex-direction: column; row-gap: 12px; ">
+            <label for="trigger-type">Trigger On</label>
+            <select name="trigger-type" id="trigger-type"
+              style="padding: 12px; border: 1px solid black; border-radius: 2px; font-family: 'Montserrat'; font-size: medium;">
+              <option value=" clock">Clock</option>
+              <option value="sensor_value">Sensor Value</option>
+            </select>
+          </div>
+
+          <div class="modal-form-item" style="display: flex; flex-direction: column; row-gap: 12px;">
+            <label for="trigger-type">Actuator Device ID</label>
+            <select name="trigger-type" id="trigger-type"
+              style="padding: 12px; border: 1px solid black; border-radius: 2px; font-family: 'Montserrat'; font-size: medium;">
+              <option value=" clock">Clock</option>
+              <option value="sensor_value">Sensor Value</option>
+            </select>
+          </div>
+          <button class="button button-primary">
+            <span class="material-icons-outlined">
+              task
+            </span> Save</button>
+        </form>
+      </div>
+
 
       <!-- task -->
       <div class="task">
@@ -157,92 +204,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
-
-
-
-      </div>
-
-      <!-- Datas -->
-      <div class="datas">
-
-        <div class="data-card">
-          <div class="data-card-left">
-            <span class="material-icons-outlined" style="padding: 8px;">
-              thermostat
-            </span>
-          </div>
-          <div class="data-card-right">
-            <p>46&deg;C</p>
-            <p>Temperature</p>
-          </div>
-        </div>
-
-        <div class="data-card">
-          <div class="data-card-left">
-            <span class="material-icons-outlined" style="padding: 8px;">
-              cloud
-            </span>
-          </div>
-          <div class="data-card-right">
-            <p>46&percnt;</p>
-            <p>Humidity</p>
-          </div>
-        </div>
-
-        <div class="data-card">
-          <div class="data-card-left">
-            <span class="material-icons-outlined" style="padding: 8px;">
-              wb_sunny
-            </span>
-          </div>
-          <div class="data-card-right">
-            <p>4.5</p>
-            <p>sunlight intensity</p>
-          </div>
-        </div>
-
-
-      </div>
-
-      <!-- Photos  -->
-      <div class="photos">
-        <div class="photo-card">
-          <h3>Photo On Place</h3>
-          <div class="photo-image">
-            <img style="background-size: cover; width: 100%; aspect-ratio: 4/3;"
-              src="https://media.istockphoto.com/id/808561294/id/foto/jagung.jpg?s=1024x1024&w=is&k=20&c=QLk70DDHBgeln8isDooSkR1u95JBHeNSnx-kqWb1VA4="
-              alt="">
-          </div>
-          <p>Updated 1 Minute ago</p>
-        </div>
-
-        <div class="photo-card">
-          <h3>Photo On Place</h3>
-          <div class="photo-image">
-            <img style="background-size: cover; width: 100%; aspect-ratio: 4/3;"
-              src="https://images.unsplash.com/photo-1529313780224-1a12b68bed16?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
-              alt="">
-          </div>
-          <p>Updated 1 Minute ago</p>
-        </div>
-      </div>
-
-      <div class="charts">
-        <div class="charts-card">
-          <p class="chart-title">Temperature On Place</p>
-          <div id="temperature-chart"></div>
-        </div>
-        <div class="charts-card">
-          <p class="chart-title">Humidity On Place</p>
-          <div id="humidity-chart"></div>
-        </div>
-      </div>
     </main>
-    <!-- End main -->
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
   <!-- ApexCharts -->
 </body>
 
